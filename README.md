@@ -59,11 +59,13 @@
 
 ### 실험 기록
   - 성능 최적화를 위해 수항한 11차례의 실험 기록입니다. 검증 정확도와 과적합 방지를 위해 다양한 구조적 변화와 하이퍼파라미터 조정을 시도했습니다.
-| 실험 ID | 주요 변경 사항 (Modification) | 설정 (Settings) | 목적 및 결과 |
-| :--- | :--- | :--- | :--- |
-| **Exp 1-3** | K-Fold 도입 및 LR 조정 | 2~5 Fold, LR 0.001~0.0001 | 학습 안정성 확보 및 교차 검증 도입 |
+
+| **Exp 1-3** | K-Fold 도입 및 LR 조정 | 2-5 Fold, LR 0.001-0.0001 | 학습 안정성 확보 및 교차 검증 도입 |
+
 | **Exp 4-6** | FC 레이어 확장 & Patience | Dense(256) 추가, Patience=10 | 모델 용량 증대 및 Early Stopping 적용 |
+
 | **Exp 7-8** | Data Augmentation 적용 | Random Crop/Flip, LR 조정 | 일반화 성능 향상 시도 |
+
 | **Exp 9-11** | **Final Architecture** | **Dropout(0.4) + 2nd Dense** | **과적합 해결 및 최종 성능 극대화** |
 
 ### 주요 인사이트 (Insights)
